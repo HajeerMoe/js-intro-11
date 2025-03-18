@@ -1,0 +1,52 @@
+OOP = Object Oriented Programming
+OOP Langs: Java, C#, C++
+OOP Langs will convert every real life objects into Programming
+
+JS is NOT an OOP lang.
+JS is prototype based programming lang
+
+const mugJan = {
+    material: 'glass',
+    price: 36.08,
+    design: 'design1'
+}
+const mugFeb = {
+    material: 'glass',
+    price: 37.28,
+    design: 'design2'
+}
+const mugMar = {
+    material: 'glass',
+    price: 35.21,
+    design: 'design3'
+}
+
+
+//Constructor function (WILL START WITH UPPERCASE, ASSIGN GIVEN PARAMETERS TO (THIS) KEYWORD) ***NOT USED ANYMORE***
+
+function Mug(material, price, designName) {
+    this.material = material;
+    this.price = price;
+    this.designName = designName;
+}
+
+const mugJanuary = new Mug('glass', 36,08, 'design1')
+const mugFeburary = new Mug('glass', 39,58, 'design2')
+const mugMarch = new Mug('glass', 34,38, 'design3')
+
+
+
+
+
+//CLASS CONCSTRUCTOR *Now USED*
+class Student {
+    constructer(fullname, age, program) {
+        this.fullname = fullname
+        this.age = age
+        this.program = program
+    }
+}
+
+const student1 = new Student('John Doe', 50, 'SDET')
+const student2 = new Student('Moe Hasjeer', 22, 'SDET')
+const student3 = new Student('Mohamad Hishmoe', 25, 'SE')

@@ -5,7 +5,7 @@ const repeatTask = num => {
     return ''
 }
 
-console.log(repeatTask(15)) //ENTER NUMBER OF TASKS!
+console.log(repeatTask(13)) //ENTER NUMBER OF TASKS!
 
 
 
