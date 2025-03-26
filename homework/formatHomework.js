@@ -62,18 +62,13 @@ function formatTestCases(input) {
 }
 
 // Example test case input
-const inputText = `Write a method named mostRepeated() takes an array argument and returns the most counted element from the array.
-
-NOTE: Assume that you will not be given empty array and the count of one element will always be more than the others.
-
-Examples:
-mostRepeated([4, 7, 4, 4, 4, 23, 23, 23]) 			-> 4
-mostRepeated(["pen", "pencil", "pen", "123", "abc", "pen", "pencil"]) 	-> "pen"
-mostRepeated([10]) 					-> 10
-mostRepeated(["TechGlobal"]) 				-> "TechGlobal"
-
-
-
+const inputText = `Write a function named hasUpperCase() which takes a string argument and 
+return true if there is an uppercase letter and false otherwise.
+Examples:
+hasUpperCase("javascript")  -> false
+hasUpperCase("John")  -> true
+hasUpperCase("$125.0")  -> false
+hasUpperCase("")  -> false
 `;
 
 console.log(formatTestCases(inputText));
