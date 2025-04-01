@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Within Table</title>
+    <style>
+      table,
+      tr,
+      td,
+      th {
+        border: 1px solid;
+        min-width: 200px;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- tr = row, td = column, th = heading -->
+    <table>
+      <tr>
+        <th>Name:</th>
+        <td>
+          <div>
+            <input type="text" placeholder="Full Name" id="fullname" />
+          </div>
+        </td>
+      </tr>
+
+      <td>Email:</td>
+      <td>
+        <div>
+          <input type="email" placeholder="Email Adress" id="email" />
+        </div>
+      </td>
+
+      <tr>
+        <td>Password:</td>
+        <td>
+          <div>
+            <input type="password" id="password" />
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          Approval Required:<br />
+          <small>Click on the button or text to check/uncheck</small>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          Pick Your Favorite:<br />
+          <small>Click on the button or text to select.</small>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          Popup Menu:<br />
+          <small
+            >Setup Options:<br />
+            <ul>
+              <li>Number of rows to display</li>
+              <li>Allow multi-select</li>
+            </ul></small
+          >
+        </td>
+      </tr>
+
+      <tr>
+        <td>List:</td>
+        <td>
+            <select name="" id="">
+                <option value="">A</option>
+            </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Field Ignored by KM:</td>
+      </tr>
+
+      <td>Text Area:</td>
+    </table>
+  </body>
+</html>

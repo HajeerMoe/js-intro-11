@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTLM Forms</title>
+    <style>
+        div {
+            width: 400px;
+            margin: 20px auto;
+        }
+        label, input {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Form</h1>
+    <form>
+        <div>
+        <label for="name">Name</label>
+        <input type="text" placeholder="First Name" id="name"/>
+        </div>>
+        
+        <div>
+        <label for="lname"> Last Name</label>
+        <input type="text" placeholder="Last Name" id="lname"/>
+        </div>
+
+        <div>
+        <label for="email"> Email</label>
+        <input type="email" placeholder="Email" id="email"/>
+        </div>
+
+        <div>
+            <label for="pass"> Email</label>
+            <input type="password" id="pass"/>
+            </div>
+
+        <div>
+            <h3>What is your favorite color?</h3>
+            <label for="blue">Blue</label>
+            <input type="checkbox" id="blue">
+            <label for="red">Red</label>
+            <input type="checkbox" id="red">
+            <label for="green">Green</label>
+            <input type="checkbox" id="green">
+        </div>
+
+        <!-- Radio Buttons -->
+        <div> 
+            <h3>Will you attend tomorrow's class?</h3>
+            <label for="yes">Yes</label>
+            <input type="radio" name="classAttendace" id="yes" checked />
+            <label for="no">No</label>
+            <input type="radio" name="classAttendace" id="no"/>
+        </div>
+
+        <div>
+            <h3>Choose Your Country</h3>
+            <select>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                <option value="egypt">Egypt</option>
+                <option value="nigeria">Nigeria</option>
+                <option value="palestine">Palestine</option>
+            </select>
+        </div>
+
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+        
+    
+    </form>
+</body>
+</html>
