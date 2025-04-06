@@ -4,86 +4,218 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Within Table</title>
-    <style>
-      table,
-      tr,
-      td,
-      th {
-        border: 1px solid;
-        min-width: 200px;
-        border-collapse: collapse;
-      }
-    </style>
+    <link rel="stylesheet" href="formWithinTableStyling.css" />
   </head>
   <body>
     <!-- tr = row, td = column, th = heading -->
-    <table>
-      <tr>
-        <th>Name:</th>
-        <td>
-          <div>
-            <input type="text" placeholder="Full Name" id="fullname" />
-          </div>
-        </td>
-      </tr>
+    <form>
+      <div class="table-wrapper">
+        <table>
+          <tr>
+            <td><strong>Name:</strong></td>
+            <td>
+              <div>
+                <input type="text" placeholder="Full Name" id="fullname" />
+              </div>
+            </td>
+          </tr>
 
-      <td>Email:</td>
-      <td>
-        <div>
-          <input type="email" placeholder="Email Adress" id="email" />
-        </div>
-      </td>
+          <tr>
+            <td><strong>Email:</strong></td>
+            <td>
+              <div>
+                <input type="email" placeholder="Email Adress" id="email" />
+              </div>
+            </td>
+          </tr>
 
-      <tr>
-        <td>Password:</td>
-        <td>
-          <div>
-            <input type="password" id="password" />
-          </div>
-        </td>
-      </tr>
+          <tr>
+            <td><strong>Password:</strong></td>
+            <td>
+              <div>
+                <input type="password" id="password" />
+              </div>
+            </td>
+          </tr>
 
-      <tr>
-        <td>
-          Approval Required:<br />
-          <small>Click on the button or text to check/uncheck</small>
-        </td>
-      </tr>
+          <tr>
+            <td>
+              <strong>Approval Required:</strong><br />
+              <small>Click on the button or text to check/uncheck</small>
+            </td>
+            <td>
+              <div>
+                <input type="checkbox" id="approval" />
+                <label for="approval">Do you approve?</label>
+              </div>
+            </td>
+          </tr>
 
-      <tr>
-        <td>
-          Pick Your Favorite:<br />
-          <small>Click on the button or text to select.</small>
-        </td>
-      </tr>
+          <tr>
+            <td>
+              <strong>Pick Your Favorite:</strong><br />
+              <small>Click on the button or text to select.</small>
+            </td>
+            <td>
+              <div>
+                <input type="radio" id="choiceA" name="favorite" value="A" />
+                <label for="choiceA">Choice A</label> <br />
+                <input type="radio" id="choiceB" name="favorite" value="B" />
+                <label for="choiceB">Choice B</label> <br />
+                <input type="radio" id="choiceC" name="favorite" value="C" />
+                <label for="choiceC">Choice C</label>
+              </div>
+            </td>
+          </tr>
 
-      <tr>
-        <td>
-          Popup Menu:<br />
-          <small
-            >Setup Options:<br />
-            <ul>
-              <li>Number of rows to display</li>
-              <li>Allow multi-select</li>
-            </ul></small
-          >
-        </td>
-      </tr>
+          <tr>
+            <td>
+              <strong>Popup Menu:</strong>
+            </td>
+            <td>
+              <select id="state" name="state">
+                <option value="AL">Alabama -- AL</option>
+                <option value="AK">Alaska -- AK</option>
+                <option value="AZ">Arizona -- AZ</option>
+                <option value="AR">Arkansas -- AR</option>
+                <option value="CA">California -- CA</option>
+                <option value="CO">Colorado -- CO</option>
+                <option value="CT">Connecticut -- CT</option>
+                <option value="DE">Delaware -- DE</option>
+                <option value="FL">Florida -- FL</option>
+                <option value="GA">Georgia -- GA</option>
+                <option value="HI">Hawaii -- HI</option>
+                <option value="ID">Idaho -- ID</option>
+                <option value="IL">Illinois -- IL</option>
+                <option value="IN">Indiana -- IN</option>
+                <option value="IA">Iowa -- IA</option>
+                <option value="KS">Kansas -- KS</option>
+                <option value="KY">Kentucky -- KY</option>
+                <option value="LA">Louisiana -- LA</option>
+                <option value="ME">Maine -- ME</option>
+                <option value="MD">Maryland -- MD</option>
+                <option value="MA">Massachusetts -- MA</option>
+                <option value="MI">Michigan -- MI</option>
+                <option value="MN">Minnesota -- MN</option>
+                <option value="MS">Mississippi -- MS</option>
+                <option value="MO">Missouri -- MO</option>
+                <option value="MT">Montana -- MT</option>
+                <option value="NE">Nebraska -- NE</option>
+                <option value="NV">Nevada -- NV</option>
+                <option value="NH">New Hampshire -- NH</option>
+                <option value="NJ">New Jersey -- NJ</option>
+                <option value="NM">New Mexico -- NM</option>
+                <option value="NY">New York -- NY</option>
+                <option value="NC">North Carolina -- NC</option>
+                <option value="ND">North Dakota -- ND</option>
+                <option value="OH">Ohio -- OH</option>
+                <option value="OK">Oklahoma -- OK</option>
+                <option value="OR">Oregon -- OR</option>
+                <option value="PA">Pennsylvania -- PA</option>
+                <option value="RI">Rhode Island -- RI</option>
+                <option value="SC">South Carolina -- SC</option>
+                <option value="SD">South Dakota -- SD</option>
+                <option value="TN">Tennessee -- TN</option>
+                <option value="TX">Texas -- TX</option>
+                <option value="UT">Utah -- UT</option>
+                <option value="VT">Vermont -- VT</option>
+                <option value="VA">Virginia -- VA</option>
+                <option value="WA">Washington -- WA</option>
+                <option value="WV">West Virginia -- WV</option>
+                <option value="WI">Wisconsin -- WI</option>
+                <option value="WY">Wyoming -- WY</option>
+              </select>
+            </td>
+          </tr>
 
-      <tr>
-        <td>List:</td>
-        <td>
-            <select name="" id="">
-                <option value="">A</option>
-            </select>
-        </td>
-      </tr>
+          <tr>
+            <td>
+              <strong>List:</strong><br />
+              <small
+                >Setup Options:<br />
+                <ul>
+                  <li>Number of rows to display</li>
+                  <li>Allow multi-select</li>
+                  <small
+                    ><strong>Press Cmd/Ctrl for multi-select</strong></small
+                  >
+                </ul></small
+              >
+            </td>
+            <td>
+              <select name="stateslist[]" id="stateslist" multiple size="5">
+                <option value="AL">Alabama -- AL</option>
+                <option value="AK">Alaska -- AK</option>
+                <option value="AZ">Arizona -- AZ</option>
+                <option value="AR">Arkansas -- AR</option>
+                <option value="CA">California -- CA</option>
+                <option value="CO">Colorado -- CO</option>
+                <option value="CT">Connecticut -- CT</option>
+                <option value="DE">Delaware -- DE</option>
+                <option value="FL">Florida -- FL</option>
+                <option value="GA">Georgia -- GA</option>
+                <option value="HI">Hawaii -- HI</option>
+                <option value="ID">Idaho -- ID</option>
+                <option value="IL">Illinois -- IL</option>
+                <option value="IN">Indiana -- IN</option>
+                <option value="IA">Iowa -- IA</option>
+                <option value="KS">Kansas -- KS</option>
+                <option value="KY">Kentucky -- KY</option>
+                <option value="LA">Louisiana -- LA</option>
+                <option value="ME">Maine -- ME</option>
+                <option value="MD">Maryland -- MD</option>
+                <option value="MA">Massachusetts -- MA</option>
+                <option value="MI">Michigan -- MI</option>
+                <option value="MN">Minnesota -- MN</option>
+                <option value="MS">Mississippi -- MS</option>
+                <option value="MO">Missouri -- MO</option>
+                <option value="MT">Montana -- MT</option>
+                <option value="NE">Nebraska -- NE</option>
+                <option value="NV">Nevada -- NV</option>
+                <option value="NH">New Hampshire -- NH</option>
+                <option value="NJ">New Jersey -- NJ</option>
+                <option value="NM">New Mexico -- NM</option>
+                <option value="NY">New York -- NY</option>
+                <option value="NC">North Carolina -- NC</option>
+                <option value="ND">North Dakota -- ND</option>
+                <option value="OH">Ohio -- OH</option>
+                <option value="OK">Oklahoma -- OK</option>
+                <option value="OR">Oregon -- OR</option>
+                <option value="PA">Pennsylvania -- PA</option>
+                <option value="RI">Rhode Island -- RI</option>
+                <option value="SC">South Carolina -- SC</option>
+                <option value="SD">South Dakota -- SD</option>
+                <option value="TN">Tennessee -- TN</option>
+                <option value="TX">Texas -- TX</option>
+                <option value="UT">Utah -- UT</option>
+                <option value="VT">Vermont -- VT</option>
+                <option value="VA">Virginia -- VA</option>
+                <option value="WA">Washington -- WA</option>
+                <option value="WV">West Virginia -- WV</option>
+                <option value="WI">Wisconsin -- WI</option>
+                <option value="WY">Wyoming -- WY</option>
+              </select>
+            </td>
+          </tr>
 
-      <tr>
-        <td>Field Ignored by KM:</td>
-      </tr>
+          <tr>
+            <td><strong>Field Ignored by KM</strong></td>
+            <td>
+              <input type="text" placeholder="Enter KM" id="fieldKM" />
+            </td>
+          </tr>
 
-      <td>Text Area:</td>
-    </table>
+          <td><strong>Text Area:</strong></td>
+          <td>
+            <input type="text" id="textarea" />
+          </td>
+        </table>
+        <div class="button-row">
+        <button type="submit" id="save">Save</button>
+        <button type="reset" id="cancel">Cancel</button>
+        <button type="button" id="resize">Resize</button>
+      </div>
+      </div>
+    </form>
   </body>
 </html>

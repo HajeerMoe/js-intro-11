@@ -1,0 +1,59 @@
+table,
+tr,
+td,
+th {
+  border: 1px solid;
+  min-width: 200px;
+  border-collapse: collapse;
+  padding: 3px 7px;
+}
+.table-wrapper{
+    background-color: #d2b48c;
+    padding: 5px;
+    padding-bottom: 10px;
+    display: inline-block;
+    border-collapse: collapse;
+}
+
+.button-row {
+    margin-top: 5px;
+}
+td:first-child,
+th:first-child {
+    width: 10%;
+    font-size: 15px;
+}
+
+td:nth-child,
+th:nth-child {
+    width: 60%
+}
+
+#save,
+#cancel,
+#resize {
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5px 10px;
+  margin-top: 20px;
+  margin-right: 5px;
+}
+
+#save {
+  color: white;
+  border-color: aqua;
+  background-color: blue;
+}
+
+#cancel {
+  color: black;
+  border-color: blue;
+  background-color: white;
+}
+
+#resize {
+  color: black;
+  border-color: darkgray;
+  background-color: lightgray;
+}
