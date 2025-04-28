@@ -258,3 +258,15 @@ console.log(fizzBuzz(13, 18))//	-> "13 | 14 | FizzBuzz | 16 | 17 | Fizz"
 console.log(fizzBuzz(12, 5))//	-> "Buzz | Fizz | 7 | 8 | Fizz | Buzz | 11 | Fizz"
 console.log(fizzBuzz(5, 5))//	-> "Buzz"
 console.log(fizzBuzz(9, 6))// 	-> "Fizz | 7 | 8 | Fizz"
+
+// const firstDuplicate = arr => {
+//     for (let i = 0; i < arr.length; i++) {
+//       for (let j = i + 1; j < arr.length; j++) {
+//         if (arr[i] === arr[j]) return arr[i]
+//       }
+//       return -1
+//     }
+//   }
+//   console.log(firstDuplicate([ 3, 7, 10, 0, 3, 10 ])) //  			-> 3
+//   console.log(firstDuplicate([ 5, 7, 7, 0, 5, 10 ])) //  				-> 5
+//   console.log(firstDuplicate([ 5, '5', 3, 7, 4 ])) //  				-> -1

@@ -13,6 +13,7 @@ const fizzBuzz1 = num => {
     return num;
   }
 }
+
 console.log(fizzBuzz1(0)); // 	-> "FizzBuzz"
 console.log(fizzBuzz1(1)); // 	-> 1
 console.log(fizzBuzz1(3)); // 	-> "Fizz"
@@ -21,6 +22,7 @@ console.log(fizzBuzz1(30)); // 	-> "FizzBuzz"
 console.log(fizzBuzz1(10)); // 	-> "Buzz"
 console.log(fizzBuzz1(15)); // 	-> "FizzBuzz"
 console.log(fizzBuzz1(-15)); // 	-> "FizzBuzz"
+
 
 console.log("=-=-=-=-=-=-=-=-= TASK 2 =-=-=-=-=-=-=-=-=");
 /* Write a function named fizzBuzz2() which takes a number argument and returns and array consist of numbers 

@@ -62,13 +62,16 @@ function formatTestCases(input) {
 }
 
 // Example test case input
-const inputText = `Write a function named hasUpperCase() which takes a string argument and 
-return true if there is an uppercase letter and false otherwise.
+const inputText = `Write a function named splitString() which takes a string and a number 
+arguments and returns the string back split by the given number. 
+Note: Return empty string if the string shorter than splitting number or the 
+string length is not divisible by the given number.
 Examples:
-hasUpperCase("javascript")  -> false
-hasUpperCase("John")  -> true
-hasUpperCase("$125.0")  -> false
-hasUpperCase("")  -> false
+splitString("JavaScript", 5)  -> "JavaS cript"
+splitString("Java", 2)  -> "Ja va"
+splitString("Automation", 3)  -> ""
+splitString("Hello", 6)  -> ""
+splitString("12", 1)  -> "1 2"
 `;
 
 console.log(formatTestCases(inputText));
