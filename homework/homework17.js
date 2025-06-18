@@ -30,6 +30,11 @@ given positive integer and denoted by that integer and an exclamation point.
 Thus, factorial seven is written 7!, meaning 1 × 2 × 3 × 4 × 5 × 6 × 7. Factorial
 zero is defined as equal to 1. */
 var calculateFactorial = function (num) {
+    var total = 1;
+    for (var i = num; i >= 1; i--) {
+        total *= i;
+    }
+    return total;
 };
 console.log(calculateFactorial(0)); //  -> 1
 console.log(calculateFactorial(1)); //  -> 1
@@ -44,6 +49,9 @@ NOTE: GCD is a mathematical concept used to describe the largest number that
 divides two or more integers without leaving a remainder. In other words, it is
 the largest number that is a common factor of two or more numbers. */
 var calculateGCD = function (num1, num2) {
+    if (num2 === 0)
+        return Math.abs(num1);
+    return calculateGCD(num2, num1 % num2);
 };
 console.log(calculateGCD(8, 12)); //  -> 4
 console.log(calculateGCD(17, 5)); //  -> 1
@@ -58,6 +66,9 @@ NOTE: LCM is a mathematical concept used to describe the largest number that
 divides two or more integers without leaving a remainder. In other words, it is
 the largest number that is a common factor of two or more numbers. */
 var calculateLCM = function (num1, num2) {
+    if (num1 === 0 || num2 === 0)
+        return 0;
+    return Math.abs(num1 * num2) / calculateGCD(num1, num2);
 };
 console.log(calculateLCM(8, 12)); //  -> 24
 console.log(calculateLCM(17, 5)); //  -> 85
